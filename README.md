@@ -1,32 +1,29 @@
-# React + TypeScript + Vite
+# MJHS（麻雀公立中）
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> Mahjong Junior High School
 
-Currently, two official plugins are available:
+麻雀の牌効率をゲーム形式で学ぶ、1人用ブラウザゲーム。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## 開発
+```sh
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## テスト・ビルド
+```sh
+npm test
+npm run lint
+npm run build
+```
+
+## Roadmap
+
+- 牌モデル
+- 山・配牌
+- 牌譜 / GameState
+- Replay / 巻き戻し
+- 局面分岐
+- 牌効率分析
+- 復習・比較機能
+- ブラウザ公開
